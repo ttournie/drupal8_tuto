@@ -1,0 +1,5 @@
+name: Hello World
+core: 8.x
+type: module
+package: Tutorial
+description: Classical hello world module.

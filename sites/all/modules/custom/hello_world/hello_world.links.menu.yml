@@ -1,0 +1,9 @@
+hello_world.hello_world:
+  title: Hello World
+  description: 'Access the hello world page.'
+  route_name: hello_world.hello_world
+hello_world.config:
+  title: Hello World Setting form
+  description: 'Hello World setting form.'
+  parent: system.admin_config_content
+  route_name: hello_world.config
