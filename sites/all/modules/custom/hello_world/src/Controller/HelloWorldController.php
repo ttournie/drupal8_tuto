@@ -6,6 +6,7 @@
 
 namespace Drupal\hello_world\Controller;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\node\NodeInterface;
 
 /**
  * Controller routines for hello_world module routes.
@@ -24,6 +25,21 @@ class HelloWorldController extends ControllerBase {
     $sentence = \Drupal::config('hello.settings')->get('sentence');
     $output['hello_world'] = array(
       '#markup' => $sentence,
+    );
+    return $output;
+  }
+
+  /**
+   * Return the 'Hello World Node' page.
+   *
+   * @return string
+   *   A render array containing the title of a node pased has argument.
+   */
+  public function helloWorldNode(NodeInterface $node) {
+    $output = array();
+
+    $output['hello_world'] = array(
+      '#markup' => $node->getTitle(),
     );
     return $output;
   }

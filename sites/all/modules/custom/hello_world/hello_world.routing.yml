@@ -6,6 +6,15 @@ hello_world.hello_world:
   requirements:
     _permission: 'access content'
 
+hello_world.hello_world_node:
+  path: '/hello_world/{node}'
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::helloWorldNode'
+    _title: 'Hello World Node'
+  requirements:
+    _permission: 'access content'
+    node: \d+
+
 hello_world.config:
   path: '/admin/config/content/hello_world'
   defaults:
