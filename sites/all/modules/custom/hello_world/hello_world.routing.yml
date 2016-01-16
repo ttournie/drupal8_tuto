@@ -21,4 +21,4 @@ hello_world.config:
     _form: 'Drupal\hello_world\Form\HelloConfigForm'
     _title: 'Hello World Configuration Form'
   requirements:
-    _permission: 'access content'
+    _permission: 'access hello world settings'

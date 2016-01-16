@@ -1,0 +1,4 @@
+access hello world settings:
+  title: 'Access hello world settings'
+  description: 'access the hello world settings page.'
+  restrict access: true
