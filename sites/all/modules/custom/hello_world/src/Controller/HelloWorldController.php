@@ -43,4 +43,19 @@ class HelloWorldController extends ControllerBase {
     );
     return $output;
   }
+
+  /**
+   * Return the 'Hello World Access Check' page.
+   *
+   * @return string
+   *   A render array containing a message if you have access to the page.
+   */
+  public function helloWorldAccessCheck() {
+    $output = array();
+
+    $output['hello_world'] = array(
+      '#markup' => $this->t('Congratulation you have access to this page.'),
+    );
+    return $output;
+  }
 }

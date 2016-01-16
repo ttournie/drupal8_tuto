@@ -7,3 +7,7 @@ hello_world.config:
   description: 'Hello World setting form.'
   parent: system.admin_config_content
   route_name: hello_world.config
+hello_world.access_page:
+  title: Hello World Access Page
+  description: 'Hello World setting form.'
+  route_name: hello_world.access_page

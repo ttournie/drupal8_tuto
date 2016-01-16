@@ -22,3 +22,11 @@ hello_world.config:
     _title: 'Hello World Configuration Form'
   requirements:
     _permission: 'access hello world settings'
+
+hello_world.access_page:
+  path: '/hello_world/access'
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::helloWorldAccessCheck'
+    _title: 'Hello World Access Check Page'
+  requirements:
+    _access_hello_world_access_page: 'TRUE'
